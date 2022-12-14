@@ -10,7 +10,14 @@ const processReservedTicket = async (message) => {
   return Promise.resolve('[processReservedTicket]')
 };
 
+const processCancelledTicket = async (message) => {
+  console.log('[processCancelledTicket]', message)
+  return Promise.resolve('[processCancelledTicket]')
+};
+
+
 module.exports = {
   processPendingTicket,
-  processReservedTicket
+  processReservedTicket,
+  processCancelledTicket
 };

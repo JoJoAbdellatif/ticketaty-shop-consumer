@@ -21,7 +21,7 @@ const kafkaMessageValidation = {
   kafkaMessage(reservation) {
     var schema = Joi.object().keys({
       meta: Joi.object().keys({
-        action: Joi.string().valid(messages.TICKET_RESERVED, messages.TICKET_PENDING).required(),
+        action: Joi.string().valid(messages.TICKET_RESERVED, messages.TICKET_PENDING,messages.TICKET_CANCELLED).required(),
       }).unknown(false),
       body: messageBody,
     }).required();
