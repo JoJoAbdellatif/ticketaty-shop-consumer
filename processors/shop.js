@@ -1,4 +1,4 @@
-const axios = require('axios');
+const axios = require('axios'); //changed vivdly
 const pendingURL = 'http://localhost:3000/pendingMatch'
 const reservationURL = 'http://localhost:3000/reserveMatch'
 const cancellURL = 'http://localhost:3000/cancellMatch'
