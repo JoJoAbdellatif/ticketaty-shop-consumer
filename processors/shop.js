@@ -1,10 +1,10 @@
 const axios = require('axios'); //changed vivdly
-const pendingURL = 'http://localhost:3000/pendingMatch'
-const reservationURL = 'http://localhost:3000/reserveMatch'
-const cancellURL = 'http://localhost:3000/cancellMatch'
+const pendingURL = 'https://ticketaty-shop.vercel.app/pendingMatch'
+const reservationURL = 'https://ticketaty-shop.vercel.app/reserveMatch'
+const cancellURL = 'https://ticketaty-shop.vercel.app/cancellMatch'
 
 const processPendingTicket = async (message) => {
-  const pending =  await axios.patch(pendingURL,message.body)
+  const pending =  await axios.patch(pendingURL,message.body) 
   console.log('[processPendingTicket]', message)
   return Promise.resolve('[processPendingTicket]')
 };
